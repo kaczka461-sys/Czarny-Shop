@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: #0b0b0b;
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: #000;
+  border-bottom: 1px solid #222;
+}
+
+.logo {
+  height: 45px;
+}
+
+.cart-btn {
+  background: none;
+  border: 1px solid #333;
+  color: #fff;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+.hero {
+  padding: 120px 40px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 56px;
+  letter-spacing: 4px;
+}
+
+.hero p {
+  opacity: 0.7;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  padding: 60px 40px;
+}
+
+.product {
+  background: #111;
+  padding: 25px;
+  border: 1px solid #222;
+}
+
+.product img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.product h3 {
+  margin: 0;
+}
+
+.desc {
+  opacity: 0.6;
+  font-size: 14px;
+}
+
+.price {
+  margin: 15px 0;
+  font-size: 18px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #fff;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cart {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 360px;
+  height: 100%;
+  background: #000;
+  padding: 25px;
+  border-left: 1px solid #222;
+}
+
+.hidden {
+  display: none;
+}
+
+.checkout {
+  margin-top: 30px;
+}
+
+.pay {
+  display: block;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.paypal { background: #003087; }
+.card { background: #635bff; }
+
+.blik {
+  text-align: center;
+  opacity: 0.6;
+  font-size: 14px;
+}
+
+.close {
+  margin-top: 20px;
+  background: none;
+  border: 1px solid #333;
+  color: #fff;
+
+
+  .product {
+  background: #0f0f0f;
+  padding: 30px;
+  border: 1px solid #222;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+}
+
+.hero {
+  padding: 140px 40px;
+  text-align: center;
+  background:
+    radial-gradient(circle at top, #1a1a1a 0%, #000 70%);
+    
+}
+.hero h1 {
+  font-size: 64px;
+  letter-spacing: 6px;
+  font-weight: 800;
+}
+
+}

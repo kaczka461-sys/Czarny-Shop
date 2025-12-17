@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>CZARNY®</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <img src="logo.png" class="logo" alt="CZARNY">
+  <nav>
+    <button class="cart-btn" onclick="openCart()">Koszyk (<span id="cartCount">0</span>)</button>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>OVERSIZE STREETWEAR</h1>
+  <p>Minimalizm. Ciężka bawełna. Czerń.</p>
+</section>
+
+<section class="products">
+  <div class="product">
+    <img src="hoodie.jpg">
+    <h3>Hoodie Oversize</h3>
+    <p class="desc">Gruba bawełna 420g · krój oversize</p>
+    <p class="price">— zł</p>
+    <button onclick="addToCart('Hoodie Oversize')">Dodaj do koszyka</button>
+  </div>
+
+  <div class="product">
+    <img src="tshirt.jpg">
+    <h3>T-Shirt Oversize</h3>
+    <p class="desc">Bawełna premium · drop shoulder</p>
+    <p class="price">— zł</p>
+    <button onclick="addToCart('T-Shirt Oversize')">Dodaj do koszyka</button>
+  </div>
+</section>
+
+<div class="cart hidden" id="cart">
+  <h2>Koszyk</h2>
+  <ul id="cartItems"></ul>
+
+  <div class="checkout">
+    <a href="https://www.paypal.com" target="_blank" class="pay paypal">PayPal</a>
+    <a href="https://checkout.stripe.com" target="_blank" class="pay card">Karta</a>
+    <div class="blik">BLIK – po przekierowaniu</div>
+  </div>
+
+  <button class="close" onclick="closeCart()">Zamknij</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+<p class="desc">
+  420g heavyweight cotton<br>
+  Oversize fit · drop shoulder<br>
+  Made in Poland
+</p>
+
+<img src="hoodie.jpg">
